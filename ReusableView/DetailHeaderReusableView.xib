@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="U6b-Vx-4bR" customClass="DetailHeaderReusableView" customModule="ZooApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="301"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4lU-6b-QzQ">
+                    <rect key="frame" x="0.0" y="0.0" width="389" height="301"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ewh-b9-HVX">
+                    <rect key="frame" x="16" y="262" width="357" height="32"/>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" red="0.074509803921568626" green="0.078431372549019607" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="segmentChanged:" destination="U6b-Vx-4bR" eventType="valueChanged" id="aul-uh-rCf"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Published day 2025" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZW-oN-7zu">
+                    <rect key="frame" x="16" y="217" width="357" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.85098039219999999" green="0.85490196080000003" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gzl-6L-fL4">
+                    <rect key="frame" x="16" y="212" width="357" height="1"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="cAb-52-uAy"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbk-F7-h2z">
+                    <rect key="frame" x="16" y="191" width="21" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.85098039219999999" green="0.85490196080000003" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Narmin Alasova" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEO-Q1-uVX">
+                    <rect key="frame" x="37" y="191" width="101" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" systemColor="systemYellowColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lion is spiritual animal" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDX-Ir-4Ux">
+                    <rect key="frame" x="16" y="162.66666666666666" width="357" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="Bbk-F7-h2z" firstAttribute="top" secondItem="DDX-Ir-4Ux" secondAttribute="bottom" constant="8" id="1Jp-f9-ckP"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="Gzl-6L-fL4" secondAttribute="trailing" constant="16" id="1aL-kt-g2C"/>
+                <constraint firstItem="Bbk-F7-h2z" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="16" id="2sU-Tv-IX6"/>
+                <constraint firstItem="Ewh-b9-HVX" firstAttribute="top" secondItem="lZW-oN-7zu" secondAttribute="bottom" constant="28" id="5Jz-qu-yre"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="DDX-Ir-4Ux" secondAttribute="trailing" constant="16" id="7xq-LY-qdZ"/>
+                <constraint firstItem="Gzl-6L-fL4" firstAttribute="top" secondItem="cEO-Q1-uVX" secondAttribute="bottom" constant="4" id="9hv-Hy-mBT"/>
+                <constraint firstItem="DDX-Ir-4Ux" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="16" id="9ic-jR-IA8"/>
+                <constraint firstAttribute="bottom" secondItem="4lU-6b-QzQ" secondAttribute="bottom" id="B3E-gt-hcv"/>
+                <constraint firstItem="Ewh-b9-HVX" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="16" id="E7S-aw-Daa"/>
+                <constraint firstAttribute="bottom" secondItem="Ewh-b9-HVX" secondAttribute="bottom" constant="8" id="Ghh-i2-9IS"/>
+                <constraint firstItem="lZW-oN-7zu" firstAttribute="top" secondItem="Gzl-6L-fL4" secondAttribute="bottom" constant="4" id="Gnu-PN-WDP"/>
+                <constraint firstItem="lZW-oN-7zu" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="16" id="OwW-Mx-D32"/>
+                <constraint firstItem="4lU-6b-QzQ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="QUq-DF-rM3"/>
+                <constraint firstItem="Gzl-6L-fL4" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="16" id="TVl-oc-3L6"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="Ewh-b9-HVX" secondAttribute="trailing" constant="16" id="akJ-Gh-Mcy"/>
+                <constraint firstAttribute="trailing" secondItem="4lU-6b-QzQ" secondAttribute="trailing" id="arP-og-QeW"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="lZW-oN-7zu" secondAttribute="trailing" constant="16" id="cb6-8O-TMN"/>
+                <constraint firstItem="Gzl-6L-fL4" firstAttribute="top" secondItem="Bbk-F7-h2z" secondAttribute="bottom" constant="4" id="jO8-pS-mWj"/>
+                <constraint firstItem="4lU-6b-QzQ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="lAl-Mh-Icl"/>
+                <constraint firstItem="cEO-Q1-uVX" firstAttribute="leading" secondItem="Bbk-F7-h2z" secondAttribute="trailing" id="pG1-Hj-2PO"/>
+            </constraints>
+            <connections>
+                <outlet property="authorLabel" destination="cEO-Q1-uVX" id="MQQ-53-BXS"/>
+                <outlet property="image" destination="4lU-6b-QzQ" id="pjw-H6-oep"/>
+                <outlet property="nameLabel" destination="DDX-Ir-4Ux" id="cmF-Ia-1F6"/>
+                <outlet property="publishedDateLabel" destination="lZW-oN-7zu" id="bAz-GS-CoW"/>
+                <outlet property="segment" destination="Ewh-b9-HVX" id="xcS-35-DAc"/>
+            </connections>
+            <point key="canvasLocation" x="144.27480916030532" y="107.3943661971831"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
